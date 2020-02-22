@@ -2,6 +2,15 @@
 
 use std::mem;
 
+// constants, a type has to be assigned explicitly
+// file available
+const MEANING_OF_LIFE:u8 = 42; // no fixed address
+
+// globally available
+static Z:i32 = 123;
+// mutable values can be used, but it must be inside an unsafe block
+static mut Y:i32 = 321;
+
 fn scope_and_shadowing() {
     let a = 123;
 
@@ -84,5 +93,10 @@ fn fundamental_data_types() {
 }
 
 fn main() {
-    scope_and_shadowing();
+    println!("{}", Z);
+    // usage of unsafe global variable
+    unsafe {
+        Y = 777;
+        println!("{}", Y);
+    }
 }
