@@ -2,6 +2,8 @@
 
 use std::mem;
 
+mod sh;
+
 // constants, a type has to be assigned explicitly
 // file available
 const MEANING_OF_LIFE:u8 = 42; // no fixed address
@@ -93,10 +95,12 @@ fn fundamental_data_types() {
 }
 
 fn main() {
-    println!("{}", Z);
-    // usage of unsafe global variable
-    unsafe {
-        Y = 777;
-        println!("{}", Y);
-    }
+    sh::stack_and_heap();
+
+    // println!("{}", Z);
+    // // usage of unsafe global variable
+    // unsafe {
+    //     Y = 777;
+    //     println!("{}", Y);
+    // }
 }
