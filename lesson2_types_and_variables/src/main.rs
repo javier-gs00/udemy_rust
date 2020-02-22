@@ -2,6 +2,21 @@
 
 use std::mem;
 
+fn scope_and_shadowing() {
+    let a = 123;
+
+    // let a = 777; // redeclaring a variable overrides the previous value
+    // curly braces create an scope
+    {
+        let b = 456;
+        println!("inside, b = {}", b);
+        let a = 777; // this only affects the scope in which is declared in
+        println!("inside, a = {}", a);
+    }
+
+    println!("a = {}", a);
+}
+
 fn operators() {
     // arithmetic
     let mut a = 2+3*4;
@@ -69,5 +84,5 @@ fn fundamental_data_types() {
 }
 
 fn main() {
-    operators();
+    scope_and_shadowing();
 }
