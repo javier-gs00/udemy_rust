@@ -1,5 +1,7 @@
+mod enums;
 mod structures;
 
 fn main() {
-    structures::structures();
+    // structures::structures();
+    enums::enums();
 }
