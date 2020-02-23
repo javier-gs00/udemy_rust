@@ -1,7 +1,9 @@
 mod enums;
 mod structures;
+mod unions;
 
 fn main() {
     // structures::structures();
-    enums::enums();
+    // enums::enums();
+    unions::unions();
 }
