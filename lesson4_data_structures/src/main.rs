@@ -4,6 +4,7 @@ mod arrays;
 mod enums;
 mod hashmaps;
 mod option_t;
+mod pattern_matching;
 mod slices;
 mod strings;
 mod structures;
@@ -21,5 +22,6 @@ fn main() {
     // slices::slices();
     // strings::strings();
     // tuples::tuples();
-    hashmaps::entry();
+    // hashmaps::entry();
+    pattern_matching::pattern_matching();
 }
