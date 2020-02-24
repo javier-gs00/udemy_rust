@@ -2,6 +2,7 @@
 
 mod arrays;
 mod enums;
+mod generics;
 mod hashmaps;
 mod option_t;
 mod pattern_matching;
@@ -23,5 +24,6 @@ fn main() {
     // strings::strings();
     // tuples::tuples();
     // hashmaps::entry();
-    pattern_matching::pattern_matching();
+    // pattern_matching::pattern_matching();
+    generics::generics();
 }
