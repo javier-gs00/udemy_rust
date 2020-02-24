@@ -1,6 +1,9 @@
+#![allow(dead_code)]
+
 mod arrays;
 mod enums;
 mod option_t;
+mod slices;
 mod structures;
 mod unions;
 mod vectors;
@@ -11,5 +14,6 @@ fn main() {
     // unions::unions();
     // option_t::option_t();
     // arrays::arrays();
-    vectors::vectors();
+    // vectors::vectors();
+    slices::slices();
 }
