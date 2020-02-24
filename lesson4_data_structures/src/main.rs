@@ -4,6 +4,7 @@ mod arrays;
 mod enums;
 mod option_t;
 mod slices;
+mod strings;
 mod structures;
 mod unions;
 mod vectors;
@@ -15,5 +16,6 @@ fn main() {
     // option_t::option_t();
     // arrays::arrays();
     // vectors::vectors();
-    slices::slices();
+    // slices::slices();
+    strings::strings();
 }
