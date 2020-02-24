@@ -2,6 +2,7 @@
 
 mod arrays;
 mod enums;
+mod hashmaps;
 mod option_t;
 mod slices;
 mod strings;
@@ -19,5 +20,6 @@ fn main() {
     // vectors::vectors();
     // slices::slices();
     // strings::strings();
-    tuples::tuples();
+    // tuples::tuples();
+    hashmaps::entry();
 }
