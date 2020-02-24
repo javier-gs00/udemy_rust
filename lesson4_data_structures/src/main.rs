@@ -6,6 +6,7 @@ mod option_t;
 mod slices;
 mod strings;
 mod structures;
+mod tuples;
 mod unions;
 mod vectors;
 
@@ -17,5 +18,6 @@ fn main() {
     // arrays::arrays();
     // vectors::vectors();
     // slices::slices();
-    strings::strings();
+    // strings::strings();
+    tuples::tuples();
 }
