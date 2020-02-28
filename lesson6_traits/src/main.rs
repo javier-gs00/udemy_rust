@@ -6,6 +6,7 @@ mod into;
 mod drop;
 mod operator_overloading;
 mod static_dispatch;
+mod dynamic_dispatch;
 
 fn main() {
     // traits::enter();
@@ -13,5 +14,6 @@ fn main() {
     // into::enter();
     // drop::enter();
     // operator_overloading::enter();
-    static_dispatch::enter();
+    // static_dispatch::enter();
+    dynamic_dispatch::enter()
 }
