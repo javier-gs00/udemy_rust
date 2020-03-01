@@ -22,6 +22,7 @@ struct Person {
 }
 
 impl Person {
+    // The two following definitions are equal
     // fn get_ref_name(&self) -> &String {
     fn get_ref_name<'a>(&'a self) -> &'a String {
         &self.name
